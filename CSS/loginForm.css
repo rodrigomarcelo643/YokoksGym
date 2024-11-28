@@ -1,0 +1,124 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+#NoInternetModal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  overflow: auto;
+}
+.modal-content-no {
+  background-color: #fefefe;
+  margin: 1% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 50%;
+  max-width: 1000px !important;
+  animation: scaleUp 0.5s ease-out;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.redirect-message {
+  width: 300px !important;
+  height: 100px !important;
+  align-content: center;
+}
+.image-success {
+  width: 15px;
+  height: 15px;
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 80% !important;
+  background: rgba(0, 0, 0, 0.797);
+  border-radius: 8px;
+}
+
+.text-overlay h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.text-overlay p {
+  font-size: 1.25rem;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: green;
+}
+#spinnerOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.363);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: none;
+}
+
+#spinnerOverlay img {
+  width: 150px;
+}
+.spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #fff;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.submitting {
+  background-color: #a0d6a4;
+  cursor: not-allowed;
+}
+
+.login-main {
+  background-image: url(../Assets/login_staff.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+label {
+  overflow: hidden;
+}

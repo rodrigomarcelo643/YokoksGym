@@ -1,0 +1,111 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item {
+  flex: 1;
+}
+.filter-buttons {
+  margin-bottom: 1rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background-color: #009b7b;
+  color: white;
+}
+
+.member-row:hover {
+  background-color: #f7f7f7;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+.pagination a:disabled {
+  cursor: not-allowed;
+}
+.pagination a {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a.active {
+  background-color: #009b7b;
+  color: white;
+}
+
+.pagination a:hover {
+  background-color: #009b7b;
+  color: white !important;
+}
+
+.highlight {
+  background-color: #009b7b;
+  color: white;
+}
+
+.no-members {
+  text-align: center;
+}
+
+/*Expenses Pagination*/
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  border-radius: 10px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: #636363;
+  transition: background-color 0.3s, color 0.3s;
+}
+.pagination button:hover {
+  background-color: #009b7b;
+  color: white !important;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  background-color: #f0f0f0;
+  color: #4d4747;
+}
+.pagination button:disabled:hover {
+  cursor: not-allowed;
+  background-color: #f0f0f0;
+  color: #1f1d1d !important;
+}
+
+.pagination .page-btn {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+.pagination .page-btn:hover {
+  background-color: #009b7b !important;
+  color: white !important;
+}
+
+.pagination .page-btn.active {
+  background-color: #009b7b;
+  color: white !important;
+}

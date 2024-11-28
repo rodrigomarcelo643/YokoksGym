@@ -1,0 +1,29 @@
+#ShowSettings {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+  overflow: auto;
+}
+label {
+  overflow: hidden;
+}
+
+.modal-content-settings {
+  background-color: #fefefe;
+  margin: 2% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 50%;
+  max-width: 1000px !important;
+  animation: scaleUp 0.5s ease-out;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.setting-top {
+  margin-top: -30px !important;
+}

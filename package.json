@@ -1,0 +1,29 @@
+{
+  "name": "your-svelte-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.9"
+  },
+  "expenses": [
+    {
+      "id": 1,
+      "date": "2024-09-27",
+      "image": "data:image/jpeg;base64,...",
+      "description": "Expense description",
+      "type": "Expense type",
+      "supplier": "Supplier name",
+      "amount": "100.00",
+      "full_name": "Marcelo Rodrigo",
+      "image_size_bytes": 524288,
+      "image_size_kiB": "512.00 KiB"
+    }
+  ]
+}

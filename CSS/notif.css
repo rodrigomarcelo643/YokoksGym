@@ -1,0 +1,282 @@
+/* From Uiverse.io by vinodjangid07 */
+.button {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(44, 44, 44);
+  border-radius: 50%;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
+  border: none;
+}
+label {
+  overflow: hidden;
+}
+.bell {
+  width: 18px;
+}
+
+.bell path {
+  fill: white;
+}
+
+.button:hover {
+  background-color: rgb(56, 56, 56);
+}
+
+.button:hover .bell {
+  animation: bellRing 0.9s both;
+}
+
+/* bell ringing animation keyframes*/
+@keyframes bellRing {
+  0%,
+  100% {
+    transform-origin: top;
+  }
+
+  15% {
+    transform: rotateZ(10deg);
+  }
+
+  30% {
+    transform: rotateZ(-10deg);
+  }
+
+  45% {
+    transform: rotateZ(5deg);
+  }
+
+  60% {
+    transform: rotateZ(-5deg);
+  }
+
+  75% {
+    transform: rotateZ(2deg);
+  }
+}
+
+.button:active {
+  transform: scale(0.8);
+}
+
+/*Settings buttons*/
+/* From Uiverse.io by andrew-demchenk0 */
+.button-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  height: 36px;
+  width: 120px;
+  border: none;
+  background: #5e41de33;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.lable {
+  line-height: 20px;
+  font-size: 17px;
+  color: #5d41de;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.button-settings:hover {
+  background: #5e41de4d;
+}
+
+.button-settings:hover .svg-icon {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Btn,
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.Btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(23, 80, 12);
+  color: white;
+  font-weight: 500;
+  right: 10px;
+  transition-duration: 0.3s;
+}
+
+.button {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(
+    23,
+    80,
+    12
+  ); /* Match background with .Btn or adjust as needed */
+  color: white;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+}
+
+.Btn .svg,
+.button .svgIcon {
+  width: 13px;
+  height: 13px;
+  fill: white;
+}
+
+.Btn:hover,
+.button:hover {
+  color: transparent;
+}
+
+.Btn:hover .svg,
+.button:hover .svgIcon {
+  transition-duration: 0.3s;
+}
+
+/*Add Product Button*/
+
+/* From Uiverse.io by andrew-demchenk0 */
+/* Ensure the container spans the full width of the page */
+.container {
+  display: flex;
+  justify-content: space-between; /* Align children to opposite sides */
+  align-items: center;
+  padding: 10px; /* Add some padding for spacing */
+  background-color: #fff; /* Background color for the container */
+  border: 1px solid #ddd; /* Border color for visibility */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  width: 100%; /* Full width of the viewport */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Styling for the search form */
+.search-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd; /* Border color for the search form */
+  background-color: #fff; /* Background color for the search form */
+  border-radius: 4px; /* Rounded corners */
+  padding: 2px; /* Padding inside the form */
+  max-width: 300px; /* Maximum width for the search form */
+  flex: 1; /* Allow the search form to grow */
+}
+
+/* Icon styling within the search form */
+.search-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 14px;
+}
+
+/* Input field styling within the search form */
+.search-input {
+  border: none;
+  outline: none;
+  flex: 1; /* Input field grows to fill available space */
+  padding: 0 16px; /* Padding inside the input */
+  font-size: 15px; /* Font size for the input text */
+  color: #333; /* Text color */
+}
+
+/* Hide the search button */
+.search-button {
+  display: none; /* Hide the button as it's not needed for the form submission */
+}
+
+/* Styling for the Add Item button */
+.button-add-item {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #34974d;
+  background-color: #3aa856;
+  border-radius: 4px; /* Rounded corners */
+  padding: 0 10px; /* Padding inside the button */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Button text and icon transitions */
+.button-add-item,
+.button__icon,
+.button__text {
+  transition: all 0.3s;
+}
+
+/* Text styling within the Add Item button */
+.button-add-item .button__text {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Icon styling within the Add Item button */
+.button-add-item .button__icon {
+  position: absolute;
+  right: 10px;
+  height: 100%;
+  width: 30px;
+  background-color: #34974d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SVG styling within the Add Item button */
+.button-add-item .svg {
+  width: 20px;
+  stroke: #fff;
+}
+
+/* Hover effects for the Add Item button */
+.button-add-item:hover {
+  background: #34974d;
+}
+
+.button-add-item:hover .button__text {
+  color: transparent;
+}
+
+.button-add-item:hover .button__icon {
+  width: 50px;
+}
+
+/* Active state effects for the Add Item button */
+.button-add-item:active .button__icon {
+  background-color: #2e8644;
+}
+
+.button-add-item:active {
+  border: 1px solid #2e8644;
+}
+
+/*==========================================Filter styles by week dashboard==============================*/

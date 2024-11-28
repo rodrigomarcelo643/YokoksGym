@@ -1,0 +1,386 @@
+#infoBox p {
+  margin: 0;
+  font-size: 18px;
+  color: #00796b;
+}
+
+#showFormButton,
+#hideFormButton {
+  background-color: #00796b;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#showFormButton:hover,
+#hideFormButton:hover {
+  background-color: #004d40;
+}
+
+#expenseFormContainer {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #e8f5e9;
+}
+
+#expenseFormContainer form {
+  display: flex;
+  flex-direction: column;
+}
+
+#expenseFormContainer label {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #004d40;
+}
+
+#expenseFormContainer input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #00796b;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#expenseFormContainer button[type="submit"] {
+  background-color: #00796b;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#expenseFormContainer button[type="submit"]:hover {
+  background-color: #004d40;
+}
+
+#chartContainer-Expenses {
+  margin-top: 20px;
+  display: flex;
+  width: 550px;
+  margin-left: 60px;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  #chartContainer-expenses {
+    height: 300px;
+  }
+}
+
+@media (min-width: 769px) {
+  #chartContainer-expenses {
+    height: 400px;
+  }
+}
+
+/*back arrow*/
+.expense-back {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.expense-back:hover {
+  scale: 1.1;
+  transition: 0.5s;
+}
+
+/*==========Progress Bar Container*/
+
+/* Container styles */
+.progress-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: left;
+}
+
+#progressbar1 {
+  background-color: #7457f62d;
+}
+#progressbar2 {
+  background-color: #d3ebeb;
+}
+#progressbar3 {
+  background-color: #eee2c9;
+}
+#progressbar4 {
+  background-color: #94eb792a;
+}
+#progressbar5 {
+  background-color: #66ee3d85;
+}
+/* Block styles - Make each block a box */
+.progress-block {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: #fff; /* White background for the box */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for a lifted effect */
+  overflow: hidden;
+  height: 120px;
+  width: 290px; /* Width for each box */
+}
+
+/* Label styles */
+.progress-label {
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Progress square styles */
+.progress-square {
+  width: 150px;
+  height: 150px;
+  font-weight: bold;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  border: 4px solid #4a90e2; /* Add a border to make the progress square more prominent */
+  margin-top: 10px;
+}
+label {
+  overflow: hidden;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .progress-label {
+    font-size: 14px;
+  }
+
+  .progress-block {
+    width: 150px; /* Adjust width for smaller screens */
+  }
+
+  .progress-square {
+    width: 100px;
+    height: 100px;
+  }
+}
+.text-green {
+  color: green; /* For increases */
+}
+
+.text-red {
+  color: red; /* For decreases */
+}
+
+@media (max-width: 480px) {
+  .progress-label {
+    font-size: 12px;
+  }
+
+  .progress-block {
+    width: 120px; /* Adjust width for even smaller screens */
+  }
+
+  .progress-square {
+    width: 80px;
+    height: 80px;
+  }
+
+  .progress-container {
+    flex-direction: column;
+    gap: 10px; /* Reduce gap for smaller screens */
+  }
+}
+
+/* Icon image style */
+.icon-img {
+  width: 38px;
+  height: 38px;
+  margin-left: 10px;
+}
+
+/*Calendar Expenses*/
+.calendar-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#lastUpdated {
+  font-weight: bold;
+}
+
+.calendar-carousel-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.calendar-carousel {
+  display: flex;
+  overflow-x: hidden;
+  gap: 10px;
+}
+
+.calendar-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 45px;
+  border-radius: 8px;
+  background-color: #88f14b;
+  font-size: 1.2em;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.calendar-day.header {
+  background-color: #e0e0e0;
+  color: #333;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+.calendar-day.active {
+  background-color: green;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .calendar-carousel-wrapper {
+    overflow: hidden;
+  }
+
+  .calendar-carousel {
+    flex: 1;
+    min-width: 100%;
+  }
+
+  .calendar-day {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.modal-expenses {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background with opacity */
+  animation: fadeIn 0.5s; /* Animation on opening */
+  justify-content: center; /* Center modal horizontally */
+  align-items: center; /* Center modal vertically */
+}
+
+.modal-content-expenses {
+  background-color: #ffffff; /* White background */
+  margin: 0; /* Remove margin to center */
+  padding: 20px;
+  border: 2px solid #007bff; /* Blue border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  max-width: 500px; /* Max width for the modal */
+  width: 90%; /* Full width on smaller screens */
+  animation: slideIn 0.5s; /* Animation on opening */
+}
+
+.modal-expenses1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background with opacity */
+  display: flex !important; /* Use flexbox for centering */
+  justify-content: center !important; /* Center modal horizontally */
+  align-items: center !important; /* Center modal vertically */
+  animation: fadeIn 0.5s; /* Animation on opening */
+}
+
+.modal-content-view-expense {
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border: 2px solid #007bff; /* Blue border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  max-width: 500px; /* Max width for the modal */
+  width: 90%; /* Full width on smaller screens */
+  animation: slideIn 0.5s; /* Animation on opening */
+}
+
+/* Slide-in animation for modal content */
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.close-button {
+  color: #ff0000; /* Red color for close button */
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover {
+  color: #b30000; /* Darker red on hover */
+}
+
+.amount-supplier {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pagination-button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination-button:disabled {
+  background-color: #ccc; /* Gray color for disabled button */
+  cursor: not-allowed;
+}
